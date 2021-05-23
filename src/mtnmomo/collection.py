@@ -43,7 +43,7 @@ class Collection(MomoApi, object):
         data = {
             "payer": {
                 "partyIdType": "MSISDN",
-                "partyId": validate_phone_number(mobile)},
+                "partyId": mobile},
             "payeeNote": payee_note,
             "payerMessage": payer_message,
             "externalId": external_id,

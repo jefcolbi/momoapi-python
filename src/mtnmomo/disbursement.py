@@ -44,7 +44,7 @@ class Disbursement(MomoApi, object):
             "externalId": external_id,
             "payee": {
                 "partyIdType": "MSISDN",
-                "partyId": validate_phone_number(mobile)
+                "partyId": mobile
             },
             "payerMessage": payer_message,
             "payeeNote": payee_note
